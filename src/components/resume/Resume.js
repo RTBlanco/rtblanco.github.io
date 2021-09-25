@@ -1,5 +1,5 @@
 import './Resume.css';
-import resume from '../../ images/resume.png';
+import resume from '../../images/resume.png';
 
 
 const Resume = () => {
