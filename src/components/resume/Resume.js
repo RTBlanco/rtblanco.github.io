@@ -8,7 +8,7 @@ const Resume = () => {
       <img src={resume} alt="resume" />
       <div id="resume-content">
         <h1>RESUME</h1>
-        <button>Download</button>
+        <button>DOWNLOAD</button>
       </div>
     </div>
   )
