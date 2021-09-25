@@ -25,7 +25,11 @@
   top: 2137px;
 }
 
-#resume-content button {
+#resume-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 50%;
   height: 50px;
   border-radius: 50px;
