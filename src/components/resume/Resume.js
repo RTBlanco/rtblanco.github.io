@@ -1,14 +1,16 @@
 import './Resume.css';
-import resume from '../../images/resume.png';
+import resumeImg from '../../images/resume.png';
+import resume from './Resume.pdf'
 
 
 const Resume = () => {
   return (
     <div id="resume">
-      <img src={resume} alt="resume" />
+      <img src={resumeImg} alt="resume" />
       <div id="resume-content">
         <h1>RESUME</h1>
-        <button>DOWNLOAD</button>
+        {/* <button>DOWNLOAD</button> */}
+        <a href={resume} target="_blank" rel="noreferrer" >DOWNLOAD</a>
       </div>
     </div>
   )
