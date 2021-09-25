@@ -10,6 +10,7 @@ function App() {
       <About />
       <Resume />
       {/* <Projects /> */}
+      {/* <Skills /> */}
     </>
   );
 }
