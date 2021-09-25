@@ -9,6 +9,7 @@ function App() {
       <Title />
       <About />
       <Resume />
+      {/* <Projects /> */}
     </>
   );
 }
