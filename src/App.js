@@ -1,8 +1,11 @@
 import './App.css';
+import Title from './components/Title';
 
 function App() {
   return (
-    <h1>hey</h1>
+    <>
+      <Title />
+    </>
   );
 }
 

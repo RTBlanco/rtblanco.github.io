@@ -1,5 +1,4 @@
 
-
 const Title = () => {
   return (
     <div id='title'>
@@ -9,3 +8,5 @@ const Title = () => {
     </div>
   )
 }
+
+export default Title;
