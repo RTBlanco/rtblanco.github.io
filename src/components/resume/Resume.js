@@ -9,7 +9,6 @@ const Resume = () => {
       <img src={resumeImg} alt="resume" />
       <div id="resume-content">
         <h1>RESUME</h1>
-        {/* <button>DOWNLOAD</button> */}
         <a href={resume} target="_blank" rel="noreferrer" >DOWNLOAD</a>
       </div>
     </div>
