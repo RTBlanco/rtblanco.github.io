@@ -6,3 +6,29 @@
   align-items: center;
 
 }
+
+#resume img {
+  box-shadow: 10px 10px 8px #888888;
+}
+
+#resume-content {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume-content h1 {
+  position: absolute;
+  top: 2137px;
+}
+
+#resume-content button {
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+}
