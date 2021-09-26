@@ -1,7 +1,7 @@
 .project {
   border: 1px solid black;
   width: 280px;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
 }
