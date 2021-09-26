@@ -22,6 +22,7 @@ const Projects = () => {
       <div id="projects">
         {renderProjects()}
       </div>
+      <a href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">Github</a>
     </div>
   );
 };
