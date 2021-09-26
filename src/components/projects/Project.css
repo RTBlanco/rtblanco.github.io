@@ -1,0 +1,16 @@
+.project {
+  border: 1px solid black;
+  width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  height: 40%;
+  background-color: aqua;
+}
+
+.project-desc {
+  padding: 10px;
+}
