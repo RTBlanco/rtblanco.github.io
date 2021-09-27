@@ -20,10 +20,15 @@
   color: white;
   border: none;
   height: 25px;
+  padding: 5px;
 }
 
 #message {
-  
+  background-color: black;
+  color: white;
+  font-family: 'Helvetica';
+  border: none;
+  padding: 10px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
