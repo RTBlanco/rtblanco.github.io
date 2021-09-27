@@ -1,9 +1,14 @@
 import './Title.css';
 
 const Title = () => {
+
+  const handleClick = () => {
+    document.getElementById("about").scrollIntoView({behavior: "smooth"})
+  }
+
   return (
     <div id='title'>
-      <button>SOFTWARE ENGINEER</button>
+      <button onClick={handleClick}>SOFTWARE ENGINEER</button>
     </div>
   )
 }
