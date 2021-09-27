@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  background-color: #C4C4C4;
 }
 
 #resume img {

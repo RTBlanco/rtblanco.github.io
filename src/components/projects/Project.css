@@ -53,6 +53,7 @@
 
 .back {
   /* background-color: black; */
+  background-color: white;
   transform: rotateY(180deg);
 }
 
