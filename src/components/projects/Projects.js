@@ -1,5 +1,6 @@
 import './Projects.css';
 import Project from './Project';
+import github from '../../images/github.png';
 
 const Projects = () => {
   // could connect this with the git hub api and add the data 
@@ -22,7 +23,9 @@ const Projects = () => {
       <div id="projects">
         {renderProjects()}
       </div>
-      <a href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">Github</a>
+      <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
+        <img src={github} alt="link to github" />
+      </a>
     </div>
   );
 };
