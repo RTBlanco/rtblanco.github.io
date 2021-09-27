@@ -2,7 +2,14 @@ import './Contact.css';
 
 const Contact = () => {
   return (
-    
+    <div className="contact">
+      <h1>CONTACT</h1>
+      <form>
+        <input type="text" name='from' id='from' placeholder="From"/>
+        <input type="text" name="subject" id="subject" placeholder="Subject"/>
+        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+      </form>
+    </div>
   )
 }
 
