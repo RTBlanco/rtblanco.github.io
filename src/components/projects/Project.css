@@ -18,9 +18,19 @@
   transform-style: preserve-3d;
 }
 
+.project:focus {
+  outline: none;
+}
+
+.project:focus .project-inner{    
+  transform: rotateY(180deg);
+}
+
 .project:hover .project-inner{
   transform: rotateY(180deg)
 }
+
+
 
 .front, .back {
   position: absolute;
