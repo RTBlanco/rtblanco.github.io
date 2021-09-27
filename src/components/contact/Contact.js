@@ -7,7 +7,7 @@ const Contact = () => {
       <form id='contact-form'>
         <input type="text" name='from' id='from' placeholder="From"/>
         <input type="text" name="subject" id="subject" placeholder="Subject"/>
-        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+        <textarea name="message" id="message" cols="30" rows="30" placeholder="Message"></textarea>
       </form>
     </div>
   )
