@@ -1,16 +1,52 @@
 .project {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  
   width: 280px;
   height: 300px;
   display: flex;
   flex-direction: column;
+  perspective: 1000px;
 }
 
-.project img {
-  height: 40%;
+.project-inner {
+  border: 1px solid black;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project:hover .project-inner{
+  transform: rotateY(180deg)
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.front {
   background-color: aqua;
 }
 
+
+.project-image {
+  height: 100%;
+  background-color: aqua;
+  
+}
+
+.back {
+  /* background-color: black; */
+  transform: rotateY(180deg);
+}
+
+
 .project-desc {
-  padding: 10px;
+  padding: 15px;
 }
