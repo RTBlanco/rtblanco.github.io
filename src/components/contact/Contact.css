@@ -13,3 +13,24 @@
  width: 55%;
  height: 600px;
 }
+
+#contact-form input {
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 25px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
