@@ -1,9 +1,26 @@
 import './Skills.css';
+import Skill from './Skill';
+import html from '../../images/skills/html.png'
+
+
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../../images/skills', false, /\.(png|jpe?g|svg)$/));
 
 const Skills = () => {
+  console.log(images)
+  const renderSkill = () => {
+    return Object.entries(images).map(([keys, value], index) => <Skill image={images[keys].default} key={index} />)
+  }
+
+
   return (
     <div id="skills-container">
-      This is where the skills will appear
+      {renderSkill()}
     </div>
   );
 };

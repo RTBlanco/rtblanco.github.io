@@ -1,9 +1,9 @@
 import './Skill.css';
 
-const Skill = () => {
+const Skill = ({image}) => {
   return (
     <div className="skill">
-      <img src={} alt="skill" />
+      <img src={image} alt="skill" />
     </div>
   );
 };
