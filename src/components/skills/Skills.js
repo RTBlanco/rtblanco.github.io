@@ -22,7 +22,7 @@ const Skills = () => {
 
   return (
     <div id="skills-container">
-      <h1>SKILL</h1>
+      <h1>SKILLS</h1>
       <Carousel autoPlay infiniteLoop={true}>
         {renderSkill()}
       </Carousel>
