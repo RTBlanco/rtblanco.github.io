@@ -5,5 +5,5 @@ const Skills = () => {
     <div className="skills-container">
       This is where the skills will appear
     </div>
-  )
-}
+  );
+};
