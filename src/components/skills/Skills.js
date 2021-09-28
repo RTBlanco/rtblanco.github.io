@@ -1,5 +1,7 @@
 import './Skills.css';
 import Skill from './Skill';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
 
@@ -20,8 +22,10 @@ const Skills = () => {
 
   return (
     <div id="skills-container">
-      {/* <h1>SKILLS</h1> */}
-      {/* {renderSkill()} */}
+      <h1>SKILL</h1>
+      <Carousel autoPlay infiniteLoop={true}>
+        {renderSkill()}
+      </Carousel>
     </div>
   );
 };
