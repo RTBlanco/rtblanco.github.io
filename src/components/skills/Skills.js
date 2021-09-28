@@ -1,6 +1,6 @@
 import './Skills.css';
 import Skill from './Skill';
-import html from '../../images/skills/html.png'
+
 
 
 function importAll(r) {
@@ -14,13 +14,13 @@ const images = importAll(require.context('../../images/skills', false, /\.(png|j
 const Skills = () => {
   console.log(images)
   const renderSkill = () => {
-    return Object.entries(images).map(([keys, value], index) => <Skill image={images[keys].default} key={index} />)
+    return Object.entries(images).map(([keys, value], index) => <Skill image={images[keys].default} key={index}   />)
   }
-
+  
 
   return (
     <div id="skills-container">
-      {renderSkill()}
+      {/* {renderSkill()} */}
     </div>
   );
 };

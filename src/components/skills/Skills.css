@@ -1,5 +1,6 @@
-#sklls-container {
+#skills-container {
   height: 100vh;
   width: 100%;
   background-color: #C4C4C4;
+  display: flex;
 }
