@@ -20,6 +20,7 @@ const Skills = () => {
 
   return (
     <div id="skills-container">
+      <h1>SKILLS</h1>
       {/* {renderSkill()} */}
     </div>
   );
