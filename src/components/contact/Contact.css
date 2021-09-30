@@ -34,6 +34,10 @@
   cursor: pointer;
 }
 
+#contact-form button:active {
+  border: 3px solid white;
+}
+
 #message {
   background-color: black;
   color: white;
@@ -54,4 +58,20 @@
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact-form  {
+    width: 100%;
+  }
+
+  #contact-form input {
+    margin-bottom: 1px
+  }
+
+  #contact-form button {
+    width: 80%;
+    height: 60px;
+  }
+  
 }
