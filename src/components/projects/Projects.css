@@ -23,7 +23,21 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #projects-container  {
+    display: flex;
+    /* flex-direction: row; */
+  }
+
   #projects {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    /* width: %; */
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row; */
   }
 }
