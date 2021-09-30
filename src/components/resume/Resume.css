@@ -39,6 +39,10 @@
   font-size: 1em;
 }
 
+#resume-content a:active {
+  border: 3px solid white;
+}
+
 @media only screen and (max-width: 600px) {
   #resume {
     flex-direction: column;
