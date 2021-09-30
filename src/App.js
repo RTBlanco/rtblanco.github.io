@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Title />
-      {/* <About /> */}
+      <About />
       {/* <Resume /> */}
       {/* <Projects /> */}
       {/* <Skills /> */}

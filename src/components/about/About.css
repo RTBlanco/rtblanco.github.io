@@ -24,3 +24,25 @@
 #about-content, #photo-me {
   margin-top: 150px;
 }
+
+@media only screen and (max-width: 600px) {
+  #about {
+    flex-direction: column;
+  }
+
+  #about-content h1 {
+    margin-bottom: 0;
+  }
+
+  #photo-me {
+    height: 50%;
+  }
+
+  #about-content, #photo-me {
+    margin: 0;
+  }
+
+  #about-content {
+    width: 100%;
+  }
+}
