@@ -21,3 +21,9 @@
 #github-link img {
   height: 80px;
 }
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    display: flex;
+  }
+}
