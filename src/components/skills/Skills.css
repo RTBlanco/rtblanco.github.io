@@ -7,3 +7,16 @@
   justify-content: space-around;
   align-items: center;
 }
+
+
+@media only screen and (max-width: 600px) { 
+
+  #skills-container {
+    justify-content: flex-start ;
+
+  }
+
+  #skills-container h1 {
+    margin-bottom: 50%;
+  }
+}
