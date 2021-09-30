@@ -10,3 +10,9 @@
   width: 30% !important;
 } 
 
+/* @media only screen and (max-width: 600px) {
+  .skill img {
+    width: 50%;
+
+  }
+} */
