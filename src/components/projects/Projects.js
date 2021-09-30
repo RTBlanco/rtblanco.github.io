@@ -1,6 +1,8 @@
 import './Projects.css';
 import Project from './Project';
 import github from '../../images/github.png';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Projects = () => {
   // could connect this with the github api and add the data 
@@ -27,7 +29,9 @@ const Projects = () => {
     <div id="projects-container">
       <h1>PROJECTS</h1>
       <div id="projects">
-        {renderProjects()}
+        <Carousel>
+          {renderProjects()}
+        </Carousel>
       </div>
       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
         <img src={github} alt="link to github" />
