@@ -26,15 +26,21 @@
   #projects-container  {
     display: flex;
     /* flex-direction: row; */
+    overflow: hidden ;
+    /* position: absolute; */
   }
 
   #projects {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    position: relative;
-    margin: 0;
-    overflow: hidden;
+    display: grid;
+    /* position: absolute; */
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row; */
+    /* position: relative; */
+    /* margin: 0; */
+    /* overflow: hidden; */
+    width: 200%;
     /* width: %; */
     /* display: flex; */
     /* flex-wrap: nowrap; */

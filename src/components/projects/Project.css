@@ -1,6 +1,6 @@
 .project {
   /* border: 1px solid black; */
-  
+  /* overflow: hidden; */
   width: 280px;
   height: 300px;
   display: flex;
@@ -60,4 +60,10 @@
 
 .project-desc {
   padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* .project {
+    overflow: hidden;
+  } */
 }
