@@ -35,7 +35,7 @@
   }
 
   #photo-me {
-    height: 50%;
+    height: 45%;
   }
 
   #about-content, #photo-me {
@@ -44,5 +44,9 @@
 
   #about-content {
     width: 100%;
+  }
+
+  #about-content p {
+    padding: 2%;
   }
 }
