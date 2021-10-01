@@ -1,8 +1,8 @@
 import './Projects.css';
 import Project from './Project';
 import github from '../../images/github.png';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { BrowserView, MobileView } from 'react-device-detect';
+import Slider from "react-slick";
 
 const Projects = () => {
   // could connect this with the github api and add the data 
@@ -26,18 +26,32 @@ const Projects = () => {
     return projects.map((project, index) => <Project key={index} project={project} /> )
   }
 
+  const settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
   return (
-    <div id="projects-container">
-      <h1>PROJECTS</h1>
-      <div id="projects">
-        <Carousel>
-          {renderProjects()}
-        </Carousel>
-      </div>
-      <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
-        <img src={github} alt="link to github" />
-      </a>
-    </div>
+    <>
+      <BrowserView>
+        <div id="projects-container">
+          <h1>PROJECTS</h1>
+          <div id="projects">
+            {renderProjects()}
+          </div>
+          <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
+            <img src={github} alt="link to github" />
+          </a>
+        </div>
+      </BrowserView>
+      <MobileView>
+        nothing
+      </MobileView>
+    </>
+    
   );
 };
 
