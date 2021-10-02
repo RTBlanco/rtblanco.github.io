@@ -34,7 +34,6 @@
 @media only screen and (max-width: 600px) {
   #outer  {
     display: flex;
-    /* flex-direction: row; */
     overflow: hidden;    
     position: absolute;
   }
