@@ -45,18 +45,6 @@
     left: 0;
     grid-template-columns: repeat(6,1fr);
     gap: 20px;
-    /* flex-wrap: nowrap; */
-    /* flex-direction: row; */
-    /* position: relative; */
-    /* margin: 0; */
-    /* overflow: hidden; */
-    /* height: 100%; */
-    /* width: 200%; */
-    /* width: %; */
-    /* display: flex; */
-    /* flex-wrap: nowrap; */
-    /* flex-direction: row; */
-    /* overflow-x: hidden; */
     
   }
 }
