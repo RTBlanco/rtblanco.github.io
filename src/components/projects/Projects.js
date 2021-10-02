@@ -6,6 +6,7 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import { useState, useRef } from 'react';
 
 
+
 const Projects = () => {
   // could connect this with the github api and add the data 
   // TODO: Look up the Github api 
@@ -53,16 +54,32 @@ const Projects = () => {
   }
 
   return (
-    <div ref={container} id="projects-container" onTouchMove={handleMove} onTouchStart={handleStart}>
+    <div id="projects-container">
       <h1>PROJECTS</h1>
-      <div ref={projects} id="projects" >
-        {renderProjects()}
+      <div id="outer" ref={container}  onTouchMove={handleMove} onTouchStart={handleStart}>
+        <div ref={projects} id="projects" >
+          {renderProjects()}
+        </div>
       </div>
       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
         <img src={github} alt="link to github" />
       </a>
     </div>
   );
+
+  // return (
+  //   <div id="projects-container" >
+  //     <h1>PROJECTS</h1>
+  //     <div id="projects">
+  //       <Carousel>
+  //         {renderProjects()}
+  //       </Carousel>
+  //     </div>
+  //     <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
+  //       <img src={github} alt="link to github" />
+  //     </a>
+  //   </div>
+  // );
 };
 
 export default Projects;
