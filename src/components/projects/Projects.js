@@ -3,6 +3,7 @@ import Project from './Project';
 import github from '../../images/github.png';
 import FakeProjects from '../../projects';
 import { BrowserView, MobileView } from 'react-device-detect';
+import { useState, useRef } from 'react';
 
 
 const Projects = () => {
@@ -14,16 +15,47 @@ const Projects = () => {
   // https://docs.github.com/en/rest/reference/repos
   // if i do use the api i will not have the ability to grab and image (so far)
   // Going to implement a framer module to use for swiping through projects
-  
+  const projects = useRef(null)
+  const container = useRef(null)
+
+  const [startx, setStartx] = useState('');
+
+  const handleMove = e => {
+    // console.log(e)
+    
+
+    console.log('moving -> ',e.touches[0].clientX)
+    let x = e.touches[0].clientX
+    projects.current.style.left = `${x - startx}px`
+
+    let outer = container.current.getBoundingClientRect()
+    let inner = projects.current.getBoundingClientRect()
+
+    if (parseInt(projects.current.style.left) > 0 ) {
+      projects.current.style.left = '0px'
+    } else if (inner.right < outer.right) {
+      projects.current.style.left = `-${inner.width - outer.width}px`
+    }
+  }
+
+  const handleStart = e => {
+    
+    console.log(projects.current.offsetLeft)
+    console.log('start -> ', e.touches[0].clientX)
+
+    setStartx(e.touches[0].clientX - projects.current.offsetLeft)
+
+    
+  }
 
   const renderProjects = () => {
     return FakeProjects.map((project, index) => <Project key={index} project={project} /> )
   }
 
   return (
-    <div id="projects-container">
+    <div ref={container} id="projects-container" onTouchMove={handleMove} onTouchStart={handleStart}>
       <h1>PROJECTS</h1>
-      <div id="projects">
+      <div ref={projects} id="projects" >
         {renderProjects()}
       </div>
       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">

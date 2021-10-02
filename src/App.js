@@ -14,7 +14,7 @@ function App() {
       <Resume />
       {/* Need to better fit project for mobile */}
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <Contact />
     </>
   );

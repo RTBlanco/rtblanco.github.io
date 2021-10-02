@@ -26,13 +26,14 @@
   #projects-container  {
     display: flex;
     /* flex-direction: row; */
-    overflow: hidden ;
-    /* position: absolute; */
+    overflow: hidden;    
+    position: absolute;
   }
 
   #projects {
     display: grid;
-    /* position: absolute; */
+    position: absolute;
+    left: 0;
     grid-template-columns: repeat(6,1fr);
     gap: 20px;
     /* flex-wrap: nowrap; */
@@ -40,10 +41,13 @@
     /* position: relative; */
     /* margin: 0; */
     /* overflow: hidden; */
-    width: 200%;
+    /* height: 100%; */
+    /* width: 200%; */
     /* width: %; */
     /* display: flex; */
     /* flex-wrap: nowrap; */
     /* flex-direction: row; */
+    /* overflow-x: hidden; */
+    
   }
 }
