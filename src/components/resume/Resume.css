@@ -9,6 +9,7 @@
 
 #resume img {
   box-shadow: 10px 10px 8px #888888;
+  margin-left: 5%;
 }
 
 #resume-content {
@@ -51,6 +52,7 @@
 
   #resume img {
     height: 50%;
+    margin: 0;
   }
 
 }
