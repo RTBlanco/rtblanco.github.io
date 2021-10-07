@@ -6,8 +6,8 @@ const About = () => {
     <div id="about">
       <div id="about-content">
         <h1>ABOUT ME</h1>
-        {/* need to add an update about picture */}
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias magni architecto tempora minima esse. Unde error ipsam dolor magni iusto quibusdam debitis? Sit consectetur suscipit, voluptate alias commodi consequuntur enim perspiciatis eum quisquam dolore deleniti incidunt, veniam, consequatur optio adipisci deserunt harum a? Alias at ipsa recusandae placeat maxime, cupiditate earum delectus, nam reiciendis exercitationem, harum excepturi. Similique molestias consequatur laborum voluptatum eaque exercitationem. Id sequi perferendis illo, autem nulla quaerat doloremque voluptate velit? Obcaecati totam alias corrupti dicta odio consequatur beatae velit eaque vel reprehenderit veniam aut suscipit quam repellendus eius fugiat nihil quis voluptates, modi sit, cum necessitatibus?</p>
+        <p>I am a Full Stack Web Developer, with a passion for learning new and exciting programs and be able to utilize them in my day-to-day coding.
+I have experience building applications with Ruby on Rails, Python Flask, and JavaScript Express, as well as React and Redux. I am comfortable working in a Full Stack environment and can easily transition from coding in the back end to the front end with ease. Unlike the traditional route, that most Software Engineers undergo I first taught myself to program in python and later decided to join a Bootcamp to learn things that I might've missed when teaching myself to code. When not trying to create the next best thing, I’m usually working on cars, playing basketball, or improving on my photography!</p>
       </div>
       {/* This is the reall photo that is going to be used */}
       <img id="photo-me" src={image} alt="ronny" />
