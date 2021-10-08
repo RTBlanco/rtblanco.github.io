@@ -1,9 +1,9 @@
 import './Projects.css';
 import Project from './Project';
 import github from '../../images/github.png';
-import FakeProjects from '../../projects';
-import { BrowserView, MobileView } from 'react-device-detect';
-import { useState, useRef } from 'react';
+// import FakeProjects from '../../projects';
+// import { BrowserView, MobileView } from 'react-device-detect';
+import { useState, useRef, useEffect } from 'react';
 
 
 
@@ -17,13 +17,30 @@ const Projects = () => {
   // https://docs.github.com/en/rest/reference/repos
   // if i do use the api i will not have the ability to grab and image (so far)
 
+  // instead of using the api from the github use https://gh-pinned-repos-5l2i19um3.vercel.app/?username= 
+  // This is an already sorted api(but make plans to build your own)
+
   const projects = useRef(null)
   const container = useRef(null)
 
   const [startx, setStartx] = useState('');
+  const [repos, setRepos] = useState([])
+  
+
+  useEffect( ()=> {
+    fetchProjects();
+  }, []);
+
+
+  const fetchProjects = () => {
+    // convert to async await in the future 
+    return fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=rtblanco')
+      .then(resp => resp.json())
+      .then(data => setRepos(data))
+      .catch(error => console.log(error))
+  }
 
   const handleMove = e => {
-    
     let x = e.touches[0].clientX
     projects.current.style.left = `${x - startx}px`
 
@@ -38,13 +55,11 @@ const Projects = () => {
   }
 
   const handleStart = e => {
-
     setStartx(e.touches[0].clientX - projects.current.offsetLeft)
-    
   }
 
   const renderProjects = () => {
-    return FakeProjects.map((project, index) => <Project key={index} project={project} /> )
+    return repos.map((project, index) => <Project key={index} project={project} /> )
   }
 
   return (
