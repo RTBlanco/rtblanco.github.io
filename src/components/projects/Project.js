@@ -13,7 +13,7 @@ const Project = ({project}) => {
         <div className="back">
           <div className="project-desc">
             <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel=""><img src={github} alt="link to repo" /></a>
+            <a href={project.link} target="_blank" rel="noreferrer"><img src={github} alt="link to repo" /></a>
           </div>
         </div>
         
