@@ -1,4 +1,5 @@
 import './Project.css';
+import github from '../../images/github.png';
 
 const Project = ({project}) => {
   return (
@@ -11,7 +12,8 @@ const Project = ({project}) => {
         
         <div className="back">
           <div className="project-desc">
-            {project.description}
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel=""><img src={github} alt="link to repo" /></a>
           </div>
         </div>
         
