@@ -41,7 +41,11 @@
 }
 
 .front {
-  background-color: aqua;
+  background-color: var(--title-background-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

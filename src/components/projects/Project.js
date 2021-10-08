@@ -6,7 +6,7 @@ const Project = ({project}) => {
     <div tabIndex="0" className="project">
       <div className="project-inner">
         <div className="front">
-          {/* <img className="project-image" src="" alt="" /> */}
+          <h1>{project.name}</h1>
         </div>
         
         <div className="back">
