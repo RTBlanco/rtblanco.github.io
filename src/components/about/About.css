@@ -12,6 +12,10 @@
   width: 500px;
 }
 
+#about-content p {
+  font-size: 2vh;
+}
+
 #about-content h1 {
   margin-bottom: 100px;
 }
