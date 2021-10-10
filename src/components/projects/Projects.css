@@ -18,23 +18,14 @@
 }
 
 #projects {
-  /* height: 650px; */
-  /* width: 1040px; */
   height: 90%;
   width: 60%;
-  /* width: calc(90% - 300px); */
-  /* height: calc(90% - 300px); */
   max-height: 650px;
   max-width: 1040px; 
   display: flex;
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-  /* grid-template-columns: repeat(3, minmax(280px, 1fr)); */
-  /* grid-template-rows: repeat(3, minmax(300px, 1fr)); */
-  /* grid-template-columns: repeat(3,minmax(100px,1fr)); */
-  /* grid-template: repeat(3, minmax(300px)); */
   grid-column-gap: 100px;
   grid-row-gap: 50px;
   margin-bottom: 0;

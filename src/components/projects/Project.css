@@ -1,13 +1,4 @@
 .project {
-  /* overflow: hidden; */
-  /* max-width: 280px; */
-  /* max-height: 300px; */
-  /* width: 280px;
-  height: 300px;  */
-  /* height: 40%; */
-  /* width: 20%; */
-  /* max-width: 280px; */
-  /* max-height: 300px; */
   display: flex;
   flex-direction: column;
   perspective: 1000px;
@@ -50,8 +41,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* font-size: inherit; */
-  /* font-size: 2vh; */
 }
 
 .back img {
@@ -64,7 +53,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 10px; */
 }
 
 .front h1 {
@@ -83,7 +71,6 @@
 }
 
 .back {
-  /* background-color: black; */
   background-color: white;
   transform: rotateY(180deg);
 }
