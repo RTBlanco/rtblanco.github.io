@@ -44,6 +44,8 @@
 
   #projects {
     width: auto;
+    /* Having max width set to none lets us scroll more to through the projects */
+    max-width: none;
     height: auto;
     display: grid;
     position: absolute;

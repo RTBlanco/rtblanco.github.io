@@ -46,10 +46,12 @@ const Projects = () => {
 
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
-
+    console.log('inner => ', inner.right)
+    console.log('outer => ', outer.right)
     if (parseInt(projects.current.style.left) > 0 ) {
       projects.current.style.left = '0px'
     } else if (inner.right < outer.right) {
+      console.log(inner.width - outer.width)
       projects.current.style.left = `-${inner.width - outer.width}px`
     }
   }
