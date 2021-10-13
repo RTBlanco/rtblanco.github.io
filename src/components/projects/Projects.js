@@ -23,8 +23,8 @@ const Projects = () => {
   const projects = useRef(null)
   const container = useRef(null)
 
-  const [startx, setStartx] = useState('');
   const [test, setTest] = useState(-371)
+  const [startx, setStartx] = useState('');
   const [repos, setRepos] = useState([])
   
 
@@ -102,9 +102,13 @@ const Projects = () => {
     if ((inner.right  < (outer.right + 371))) {
       return false
     } else {
-      setTest(prev => prev + -371)
-      projects.current.style.transform = `translateX(${test}px)`
-      projects.current.style.transition = `transform .5s ease-in-out`
+      setTest(prev => {
+        let newState = prev + -371 
+        projects.current.style.transform = `translateX(${newState}px)`
+        projects.current.style.transition = `transform .5s ease-in-out`
+        return newState
+      })
+      // setTest(prev => prev - -371)
     }
   }
 
@@ -113,9 +117,13 @@ const Projects = () => {
     let inner = projects.current.getBoundingClientRect()
 
 
-    setTest(prev => prev  - -371)
-    projects.current.style.transform = `translateX(${test}px)`
-    projects.current.style.transition = `transform .5s ease-in-out`
+    setTest(prev => {
+      let newState = prev - -371
+      projects.current.style.transform = `translateX(${newState}px)`
+      projects.current.style.transition = `transform .5s ease-in-out`
+      return newState
+    })
+    // setTest(prev => prev + -371)
     console.log('swipe right')
   }
 
