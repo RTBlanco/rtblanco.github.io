@@ -24,6 +24,7 @@ const Projects = () => {
   const container = useRef(null)
 
   const [startx, setStartx] = useState('');
+  const [test, setTest] = useState(-371)
   const [repos, setRepos] = useState([])
   
 
@@ -46,18 +47,48 @@ const Projects = () => {
 
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
-    // console.log('inner => ', inner.right)
-    // console.log('outer => ', outer.right)
+    
     if (parseInt(projects.current.style.left) > 0 ) {
       projects.current.style.left = '0px'
     } else if (inner.right < outer.right) {
-      // console.log(inner.width - outer.width)
+      
       projects.current.style.left = `-${inner.width - outer.width}px`
     }
   }
 
   const handleStart = e => {
     setStartx(e.touches[0].clientX - projects.current.offsetLeft)
+  }
+
+  const handleEnd = e => {
+    // if touch end at -100px transition to -365px and so on
+    // projects.current.style.left = startx
+
+    let outer = container.current.getBoundingClientRect()
+    let inner = projects.current.getBoundingClientRect()
+
+
+    console.log("left -> ",projects.current.style.left)
+
+    
+
+    if ((inner.right  < (outer.right + 371))) {
+      // setTest(`-${inner.width - outer.width}`)
+    }else {
+      swipeLeft()
+    }
+
+
+    console.log("test ->",test)
+    console.log('inner => ', inner)
+    console.log('outer => ', outer)
+    console.log("added 371 =>", outer.right + 371)
+  }
+
+  const swipeLeft = () => {
+    projects.current.style.transform = `translateX(${test}px)`
+    projects.current.style.transition = `transform .5s ease-in-out`
+    setTest(prev => prev + -371)
   }
 
   const renderProjects = () => {
@@ -67,7 +98,8 @@ const Projects = () => {
   return (
     <div id="projects-container">
       <h1>PROJECTS</h1>
-      <div id="outer" ref={container}  onTouchMove={handleMove} onTouchStart={handleStart}>
+      {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
+      <div id="outer" ref={container}  onTouchEnd={handleEnd}>
         <div ref={projects} id="projects" >
           {renderProjects()}
         </div>

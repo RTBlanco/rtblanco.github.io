@@ -39,15 +39,16 @@
   #outer  {
 
     height: 350px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     overflow: hidden;    
     position: absolute;
   }
 
   #projects {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     /* width: auto; */
+    /* width: 60%; */
     width: fit-content;
     /* Having max width set to none lets us scroll more to through the projects */
     max-width: none;
