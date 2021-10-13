@@ -23,7 +23,7 @@ const Projects = () => {
   const projects = useRef(null)
   const container = useRef(null)
 
-  const [test, setTest] = useState(-371)
+  const [test, setTest] = useState(0)
   const [startx, setStartx] = useState('');
   const [repos, setRepos] = useState([])
   
@@ -48,12 +48,12 @@ const Projects = () => {
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
     
-    if (parseInt(projects.current.style.left) > 0 ) {
-      projects.current.style.left = '0px'
-    } else if (inner.right < outer.right) {
+    // if (parseInt(projects.current.style.left) > 0 ) {
+    //   // projects.current.style.left = '0px'
+    // } else if (inner.right < outer.right) {
       
-      projects.current.style.left = `-${inner.width - outer.width}px`
-    }
+    //   // projects.current.style.left = `-${inner.width - outer.width}px`
+    // }
   }
 
   const handleStart = e => {
@@ -88,7 +88,7 @@ const Projects = () => {
     // }
 
 
-    console.log("test ->",test)
+    // console.log("test ->",test)
     // console.log('inner => ', inner)
     // console.log('outer => ', outer)
     // console.log("added 371 =>", outer.right + 371)
@@ -114,13 +114,14 @@ const Projects = () => {
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
 
-
-    setTest(prev => {
-      let newState = prev - -371
-      projects.current.style.transform = `translateX(${newState}px)`
-      projects.current.style.transition = `transform .5s ease-in-out`
-      return newState
-    })
+    if ((inner.left < 0)) {
+      setTest(prev => {
+        let newState = prev - -371
+        projects.current.style.transform = `translateX(${newState}px)`
+        projects.current.style.transition = `transform .5s ease-in-out`
+        return newState
+      })
+    }
   }
 
   const renderProjects = () => {
@@ -131,7 +132,7 @@ const Projects = () => {
     <div id="projects-container">
       <h1>PROJECTS</h1>
       {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
-      <div id="outer" ref={container}  onTouchStart={handleStart} onTouchEnd={handleEnd}>
+      <div id="outer" ref={container} onTouchMove={handleMove}  onTouchStart={handleStart} onTouchEnd={handleEnd}>
         <div ref={projects} id="projects" >
           {renderProjects()}
         </div>
