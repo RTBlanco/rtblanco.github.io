@@ -43,17 +43,19 @@ const Projects = () => {
 
   const handleMove = e => {
     let x = e.touches[0].clientX
-    projects.current.style.left = `${x - startx}px`
-
-    let outer = container.current.getBoundingClientRect()
-    let inner = projects.current.getBoundingClientRect()
+    // projects.current.style.left = `${x - startx}px`
     
+    
+    // console.log('inner => ', inner)
+    // console.log('outer => ', outer)
+
     // if (parseInt(projects.current.style.left) > 0 ) {
-    //   // projects.current.style.left = '0px'
+    //   projects.current.style.left = '0px'
     // } else if (inner.right < outer.right) {
-      
-    //   // projects.current.style.left = `-${inner.width - outer.width}px`
+    //   console.log(inner.width - outer.width)
+    //   projects.current.style.left = `-${inner.width - outer.width}px`
     // }
+    // console.log(projects.current.style.left)
   }
 
   const handleStart = e => {
@@ -62,7 +64,8 @@ const Projects = () => {
 
   const handleEnd = e => {
     // if touch end at -100px transition to -365px and so on
-    // projects.current.style.left = startx
+    // projects.current.style.left = '0px'
+    
     let touchEnd = e.changedTouches[0].clientX
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
@@ -72,6 +75,7 @@ const Projects = () => {
     // console.log("end =>", touchEnd)
 
     
+
     if (startx > touchEnd) {
       swipeLeft()
     } else if (startx < touchEnd) {
