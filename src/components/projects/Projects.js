@@ -98,17 +98,15 @@ const Projects = () => {
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
 
-    console.log('swipe left')
-    if ((inner.right  < (outer.right + 371))) {
-      return false
-    } else {
+    if (!(inner.right  < (outer.right + 371))) { 
       setTest(prev => {
+        // since setting state is async 
+        // i need to change state first then animate
         let newState = prev + -371 
         projects.current.style.transform = `translateX(${newState}px)`
         projects.current.style.transition = `transform .5s ease-in-out`
         return newState
       })
-      // setTest(prev => prev - -371)
     }
   }
 
@@ -123,8 +121,6 @@ const Projects = () => {
       projects.current.style.transition = `transform .5s ease-in-out`
       return newState
     })
-    // setTest(prev => prev + -371)
-    console.log('swipe right')
   }
 
   const renderProjects = () => {
