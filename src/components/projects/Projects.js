@@ -63,32 +63,60 @@ const Projects = () => {
   const handleEnd = e => {
     // if touch end at -100px transition to -365px and so on
     // projects.current.style.left = startx
-
+    let touchEnd = e.changedTouches[0].clientX
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
 
 
-    console.log("left -> ",projects.current.style.left)
+    // console.log("start =>",startx)
+    // console.log("end =>", touchEnd)
 
     
-
-    if ((inner.right  < (outer.right + 371))) {
-      // setTest(`-${inner.width - outer.width}`)
-    }else {
+    if (startx > touchEnd) {
       swipeLeft()
+    } else if (startx < touchEnd) {
+      swipeRight()
     }
 
 
+    // if ((inner.right  < (outer.right + 371))) {
+    //   // setTest(`-${inner.width - outer.width}`)
+    // } else if (startx > touchEnd) {
+    //   swipeLeft()
+    // } else if (startx < touchEnd) {
+    //   swipeRight()
+    // }
+
+
     console.log("test ->",test)
-    console.log('inner => ', inner)
-    console.log('outer => ', outer)
-    console.log("added 371 =>", outer.right + 371)
+    // console.log('inner => ', inner)
+    // console.log('outer => ', outer)
+    // console.log("added 371 =>", outer.right + 371)
   }
 
   const swipeLeft = () => {
+    let outer = container.current.getBoundingClientRect()
+    let inner = projects.current.getBoundingClientRect()
+
+    console.log('swipe left')
+    if ((inner.right  < (outer.right + 371))) {
+      return false
+    } else {
+      setTest(prev => prev + -371)
+      projects.current.style.transform = `translateX(${test}px)`
+      projects.current.style.transition = `transform .5s ease-in-out`
+    }
+  }
+
+  const swipeRight = () => {
+    let outer = container.current.getBoundingClientRect()
+    let inner = projects.current.getBoundingClientRect()
+
+
+    setTest(prev => prev  - -371)
     projects.current.style.transform = `translateX(${test}px)`
     projects.current.style.transition = `transform .5s ease-in-out`
-    setTest(prev => prev + -371)
+    console.log('swipe right')
   }
 
   const renderProjects = () => {
@@ -99,7 +127,7 @@ const Projects = () => {
     <div id="projects-container">
       <h1>PROJECTS</h1>
       {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
-      <div id="outer" ref={container}  onTouchEnd={handleEnd}>
+      <div id="outer" ref={container}  onTouchStart={handleStart} onTouchEnd={handleEnd}>
         <div ref={projects} id="projects" >
           {renderProjects()}
         </div>
