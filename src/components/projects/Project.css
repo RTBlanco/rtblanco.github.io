@@ -82,7 +82,9 @@
 
 @media only screen and (max-width: 600px) {
   .project {
+    
     height: 300px;
-    width: 280px;
+    width: 280px; 
+    /* margin: 0 100% 0 100%; */
   }
 }

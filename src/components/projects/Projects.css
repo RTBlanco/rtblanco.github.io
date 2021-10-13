@@ -39,14 +39,14 @@
   #outer  {
 
     height: 350px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     overflow: hidden;    
     position: absolute;
   }
 
   #projects {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* width: auto; */
     /* width: 60%; */
     width: fit-content;
@@ -57,9 +57,11 @@
     position: absolute;
     left: 0;
     grid-template-columns: repeat(6,1fr);
-    gap: 90px;
+    gap: 5%;
 
-    padding: 50px 50px;
+    /* padding: 50px 50px; */
+    /* padding: 0 15% 0 15%; */
+    /* margin: 0 90px 0 90px; */
     
   }
 }

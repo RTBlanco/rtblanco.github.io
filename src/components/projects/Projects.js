@@ -102,11 +102,11 @@ const Projects = () => {
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
 
-    if (!(inner.right  < (outer.right + 371))) { 
+    if (!(inner.right  < (outer.right + 370))) { 
       setTest(prev => {
         // since setting state is async 
         // i need to change state first then animate
-        let newState = prev + -371 
+        let newState = prev + -370 
         projects.current.style.transform = `translateX(${newState}px)`
         projects.current.style.transition = `transform .5s ease-in-out`
         return newState
@@ -120,7 +120,7 @@ const Projects = () => {
 
     if ((inner.left < 0)) {
       setTest(prev => {
-        let newState = prev - -371
+        let newState = prev - -370
         projects.current.style.transform = `translateX(${newState}px)`
         projects.current.style.transition = `transform .5s ease-in-out`
         return newState
@@ -139,6 +139,7 @@ const Projects = () => {
       <div id="outer" ref={container} onTouchMove={handleMove}  onTouchStart={handleStart} onTouchEnd={handleEnd}>
         <div ref={projects} id="projects" >
           {renderProjects()}
+          {console.log(window.innerWidth)}
         </div>
       </div>
       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
