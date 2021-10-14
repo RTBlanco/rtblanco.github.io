@@ -39,29 +39,31 @@
   #outer  {
 
     height: 350px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
-    overflow: hidden;    
+    /* overflow: hidden;     */
     position: absolute;
   }
 
   #projects {
-    /* border: 1px solid red; */
-    /* width: auto; */
+    border: 1px solid red;
+    width: 100vw;
     /* width: 60%; */
     width: fit-content;
     /* Having max width set to none lets us scroll more to through the projects */
     max-width: none;
-    height: auto;
-    display: grid;
+    height: 100%;
+    /* display: grid; */
     position: absolute;
     left: 0;
-    grid-template-columns: repeat(6,1fr);
-    gap: 5%;
+    /* grid-template-columns: repeat(6,1fr); */
+    /* gap: 5%; */
 
     /* padding: 50px 50px; */
     /* padding: 0 15% 0 15%; */
     /* margin: 0 90px 0 90px; */
-    
+    display: flex;
+    align-items: center;
+    /* flex-wrap: nowrap; */
   }
 }

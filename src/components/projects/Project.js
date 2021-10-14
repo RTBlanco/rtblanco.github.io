@@ -1,9 +1,11 @@
 import './Project.css';
 import github from '../../images/github.png';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 const Project = ({project}) => {
   return (
     // Make this flip to show the detail and make it linked to the github repo
+    
     <div tabIndex="0" className="project">
       <div className="project-inner">
         <div className="front">
@@ -19,6 +21,7 @@ const Project = ({project}) => {
         
       </div>
     </div>
+      
   )
 }
 

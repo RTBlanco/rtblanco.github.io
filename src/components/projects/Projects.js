@@ -2,8 +2,9 @@ import './Projects.css';
 import Project from './Project';
 import github from '../../images/github.png';
 // import FakeProjects from '../../projects';
-// import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { useState, useRef, useEffect } from 'react';
+import SwipeableViews from 'react-swipeable-views';
 
 
 
@@ -131,8 +132,10 @@ const Projects = () => {
   const renderProjects = () => {
     return repos.map((project, index) => <Project key={index} project={project} /> )
   }
-
+  
   return (
+    
+      
     <div id="projects-container">
       <h1>PROJECTS</h1>
       {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
@@ -146,7 +149,9 @@ const Projects = () => {
         <img src={github} alt="link to github" />
       </a>
     </div>
-  );
+      
+  )
+  
 };
 
 export default Projects;
