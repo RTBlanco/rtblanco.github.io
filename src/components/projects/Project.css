@@ -87,7 +87,7 @@
   }
 
   .outerproject {
-    border: red 1px solid;
+    /* border: red 1px solid; */
     width: 100vw;
     display: flex;
     justify-content: center;
