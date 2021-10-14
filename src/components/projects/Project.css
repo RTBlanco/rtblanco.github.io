@@ -83,12 +83,14 @@
 @media only screen and (max-width: 600px) {
   .project {
     height: 300px;
-    width: 280px; 
+    width: 100vw;
   }
 
-  /* .outerproject {
+  .outerproject {
+    border: red 1px solid;
     width: 100vw;
     display: flex;
     justify-content: center;
-  } */
+    align-items: center;
+  }
 }

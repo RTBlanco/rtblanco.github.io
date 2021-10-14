@@ -2,7 +2,7 @@ import './Projects.css';
 import Project from './Project';
 import github from '../../images/github.png';
 // import FakeProjects from '../../projects';
-import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView, MobileView, isMobile  } from 'react-device-detect';
 import { useState, useRef, useEffect } from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
@@ -44,19 +44,23 @@ const Projects = () => {
 
   const handleMove = e => {
     let x = e.touches[0].clientX
-    // projects.current.style.left = `${x - startx}px`
+    projects.current.style.left = `${x - startx}px`
+
+    let outer = container.current.getBoundingClientRect()
+    let inner = projects.current.getBoundingClientRect()
     
     
     // console.log('inner => ', inner)
     // console.log('outer => ', outer)
 
-    // if (parseInt(projects.current.style.left) > 0 ) {
-    //   projects.current.style.left = '0px'
-    // } else if (inner.right < outer.right) {
-    //   console.log(inner.width - outer.width)
-    //   projects.current.style.left = `-${inner.width - outer.width}px`
-    // }
+    if (parseInt(projects.current.style.left) > 0 ) {
+      projects.current.style.left = '0px'
+    } else if (inner.right < outer.right) {
+      console.log(inner.width - outer.width)
+      projects.current.style.left = `-${inner.width - outer.width}px`
+    }
     // console.log(projects.current.style.left)
+    console.log(inner.width - outer.width)
   }
 
   const handleStart = e => {
@@ -79,7 +83,9 @@ const Projects = () => {
 
     if (startx > touchEnd) {
       swipeLeft()
-    } else if (startx < touchEnd) {
+    } 
+    
+    if (startx < touchEnd) {
       swipeRight()
     }
 
@@ -103,12 +109,12 @@ const Projects = () => {
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
 
-    if (!(inner.right  < (outer.right + 370))) { 
+    if ( ((test/ window.innerWidth) + -1) != `-${repos.length}`) { 
       setTest(prev => {
         // since setting state is async 
         // i need to change state first then animate
-        let newState = prev + -370 
-        projects.current.style.transform = `translateX(${newState}px)`
+        let newState = prev + -window.innerWidth 
+        projects.current.style.transform = `translateX(${newState - parseInt(projects.current.style.left)}px)`
         projects.current.style.transition = `transform .5s ease-in-out`
         return newState
       })
@@ -119,10 +125,10 @@ const Projects = () => {
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
 
-    if ((inner.left < 0)) {
+    if ( test !== 0 ) {
       setTest(prev => {
-        let newState = prev - -370
-        projects.current.style.transform = `translateX(${newState}px)`
+        let newState = prev - -window.innerWidth
+        projects.current.style.transform = `translateX(${newState - parseInt(projects.current.style.left)}px)`
         projects.current.style.transition = `transform .5s ease-in-out`
         return newState
       })
@@ -132,10 +138,30 @@ const Projects = () => {
   const renderProjects = () => {
     return repos.map((project, index) => <Project key={index} project={project} /> )
   }
-  
+
+
+  // if (window.innerWidth <= 600 || isMobile) {
+  //   console.log(window.innerWidth)
+  //   return (
+  //     <div id="projects-container">
+  //       <h1>PROJECTS</h1>
+  //       {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
+  //       <div id="outer" ref={container}>
+  //         <div ref={projects} id="projects" >
+  //           <SwipeableViews>
+  //             {renderProjects()}
+  //           </SwipeableViews>
+  //         </div>
+  //       </div>
+  //       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
+  //         <img src={github} alt="link to github" />
+  //       </a>
+  //     </div>
+  //   )
+  // } else {
+  // } 
+
   return (
-    
-      
     <div id="projects-container">
       <h1>PROJECTS</h1>
       {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
@@ -151,6 +177,7 @@ const Projects = () => {
     </div>
       
   )
+  
   
 };
 
