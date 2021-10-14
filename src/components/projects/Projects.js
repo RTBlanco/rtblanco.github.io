@@ -44,7 +44,7 @@ const Projects = () => {
 
   const handleMove = e => {
     let x = e.touches[0].clientX
-    projects.current.style.left = `${x - startx}px`
+    // projects.current.style.left = `${x - startx}px`
 
     let outer = container.current.getBoundingClientRect()
     let inner = projects.current.getBoundingClientRect()
