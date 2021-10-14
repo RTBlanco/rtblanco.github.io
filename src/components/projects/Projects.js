@@ -55,9 +55,10 @@ const Projects = () => {
 
     if (parseInt(projects.current.style.left) > 0 ) {
       projects.current.style.left = '0px'
-    } else if (inner.right < outer.right) {
-      console.log(inner.width - outer.width)
-      projects.current.style.left = `-${inner.width - outer.width}px`
+    } else if (  ((test/ window.innerWidth) + -1) == `-${repos.length }`  ) {
+      //   console.log("at the end")
+      projects.current.style.transform = `translateX(${test - parseInt(projects.current.style.left)}px)`
+      projects.current.style.transition = `transform .1s ease-in-out`
     }
     // console.log(projects.current.style.left)
     console.log(inner.width - outer.width)
