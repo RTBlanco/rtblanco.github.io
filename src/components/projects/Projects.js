@@ -143,41 +143,41 @@ const Projects = () => {
 
   // if (window.innerWidth <= 600 || isMobile) {
   //   console.log(window.innerWidth)
-  //   return (
-  //     <div id="projects-container">
-  //       <h1>PROJECTS</h1>
-  //       {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
-  //       <div id="outer" ref={container}>
-  //         <div ref={projects} id="projects" >
-  //           <SwipeableViews>
-  //             {renderProjects()}
-  //           </SwipeableViews>
-  //         </div>
-  //       </div>
-  //       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
-  //         <img src={github} alt="link to github" />
-  //       </a>
-  //     </div>
-  //   )
-  // } else {
-  // } 
-
   return (
     <div id="projects-container">
       <h1>PROJECTS</h1>
       {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
-      <div id="outer" ref={container} onTouchMove={handleMove}  onTouchStart={handleStart} onTouchEnd={handleEnd}>
+      <div id="outer" ref={container}>
         <div ref={projects} id="projects" >
-          {renderProjects()}
-          {console.log(window.innerWidth)}
+          <SwipeableViews>
+            {renderProjects()}
+          </SwipeableViews>
         </div>
       </div>
       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
         <img src={github} alt="link to github" />
       </a>
     </div>
-      
   )
+  // } else {
+  // } 
+
+  // return (
+  //   <div id="projects-container">
+  //     <h1>PROJECTS</h1>
+  //     {/*  onTouchMove={handleMove} onTouchStart={handleStart} */}
+  //     <div id="outer" ref={container} onTouchMove={handleMove}  onTouchStart={handleStart} onTouchEnd={handleEnd}>
+  //       <div ref={projects} id="projects" >
+  //         {renderProjects()}
+  //         {console.log(window.innerWidth)}
+  //       </div>
+  //     </div>
+  //     <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
+  //       <img src={github} alt="link to github" />
+  //     </a>
+  //   </div>
+      
+  // )
   
   
 };
