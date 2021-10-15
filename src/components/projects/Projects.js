@@ -25,7 +25,7 @@ const Projects = () => {
   const container = useRef(null)
 
   const [test, setTest] = useState(0)
-  const [startx, setStartx] = useState('');
+  const [startx, setStartx] = useState(0);
   const [repos, setRepos] = useState([])
   
 
@@ -70,7 +70,7 @@ const Projects = () => {
 
   const handleEnd = e => {
     // if touch end at -100px transition to -365px and so on
-    // projects.current.style.left = '0px'
+    projects.current.style.left = '0px'
     
     let touchEnd = e.changedTouches[0].clientX
     let outer = container.current.getBoundingClientRect()
