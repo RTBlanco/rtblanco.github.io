@@ -44,8 +44,8 @@
     position: absolute;
   }
 
-  #projects {
-    /* border: 1px solid red; */
+  /* #projects {
+    border: 1px solid red;
     width: fit-content;
     display: grid;
     left: 0;
@@ -54,6 +54,17 @@
     position: absolute;
     grid-column-gap: 0;
     align-items: center;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+  } */
+
+  #projects {
+    border: 1px solid red;
+    width: auto;
   }
+
+  /* #swipeable {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  } */
 }

@@ -83,12 +83,13 @@
 @media only screen and (max-width: 600px) {
   .project {
     height: 300px;
-    width: 100vw;
+    width: 280px;
   }
 
   .outerproject {
     /* border: red 1px solid; */
-    width: 100vw;
+    /* width: 100vw; */
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
