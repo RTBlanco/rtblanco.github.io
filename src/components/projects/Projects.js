@@ -3,7 +3,7 @@ import Project from './Project';
 import github from '../../images/github.png';
 // import FakeProjects from '../../projects';
 import { BrowserView, MobileView, isMobile  } from 'react-device-detect';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
 
@@ -27,7 +27,6 @@ const Projects = () => {
   const [test, setTest] = useState(0)
   const [startx, setStartx] = useState(0);
   const [repos, setRepos] = useState([])
-  
 
   useEffect( ()=> {
     fetchProjects();
