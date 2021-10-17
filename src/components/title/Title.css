@@ -1,5 +1,4 @@
-/* Remove the background color since there will be an image 
-for the background */
+
 
 :root {
   --title-background-color: rgb(37, 37, 37);
@@ -7,7 +6,12 @@ for the background */
 
 #title {
   height: 100vh;
-  background-color: var(--title-background-color);
+  /* background-color: var(--title-background-color); */
+  background-image: url("https://media.giphy.com/media/WaWl4kAKplVks/giphy.gif");
+  /* background-image: url("https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"); */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +20,8 @@ for the background */
 #title button {
   border: 2px white solid;
   color: white;
-  background-color: var(--title-background-color);
+  /* background-color: var(--title-background-color); */
+  background-color: rgba(0, 0, 0, 0);
   padding-left: 20px;
   padding-right: 20px;
   font-weight: bold;
