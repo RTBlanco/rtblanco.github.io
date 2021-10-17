@@ -1,7 +1,6 @@
 import './Projects.css';
 import Project from './Project';
 import github from '../../images/github.png';
-// import FakeProjects from '../../projects';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
 import SwipeableViews from 'react-swipeable-views';
@@ -29,7 +28,7 @@ const Projects = () => {
 
   
   const renderProjects = () => {
-    return repos.map((project, index) => <Project key={index} project={project} /> )
+    return repos.map((project, index) => <Project key={index} project={project} isMobile={isMobile}/> )
   }
 
   const renderMobileOrBrowser = () => {
