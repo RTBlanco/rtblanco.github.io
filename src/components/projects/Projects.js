@@ -62,9 +62,6 @@ const Projects = () => {
       </a>
     </div>
   )
-
-  
-  
 };
 
 export default Projects;
