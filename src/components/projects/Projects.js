@@ -43,7 +43,6 @@ const Projects = () => {
       return (
         <div id="projects" >
             {renderProjects()}
-            {console.log(window.innerWidth)}
         </div>
       )
     }
