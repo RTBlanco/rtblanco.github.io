@@ -5,10 +5,12 @@ import Resume from './components/resume/Resume';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Skills from './components/skills/Skills';
+import Maintenance from './Maintenance';
 
 function App() {
   return (
     <>
+      <Maintenance />
       <Title />
       <About />
       <Resume />
