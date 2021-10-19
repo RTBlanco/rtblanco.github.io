@@ -8,7 +8,7 @@ const Title = () => {
 
   return (
     <div id='title'>
-      <button onClick={handleClick}>SOFTWARE ENGINEER</button>
+      <button onClick={handleClick}>RONNY TORIBIO BLANCO</button>
     </div>
   )
 }
