@@ -37,13 +37,18 @@
 
 @media only screen and (max-width: 600px) {
   #outer  {
-    height: 350px;
+    height: 60%;
     display: flex;
     overflow: hidden;    
-    position: absolute;
+    justify-content: center;
   }
 
   #projects {
-    width: auto;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(120px,1fr));
+    gap: 1%;
+    overflow: hidden;
+    font-size: .8rem;
   }
 }

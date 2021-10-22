@@ -31,29 +31,13 @@ const Projects = () => {
     return repos.map((project, index) => <Project key={index} project={project} isMobile={isMobile}/> )
   }
 
-  const renderMobileOrBrowser = () => {
-    if (isMobile) {
-      console.log('mobile')
-      return (
-        <SwipeableViews id="swipeable">
-            {renderProjects()}
-        </SwipeableViews>
-      )
-    } else {
-      return (
-        <div id="projects" >
-            {renderProjects()}
-        </div>
-      )
-    }
-  }
-  
-
   return (
     <div id="projects-container">
       <h1>PROJECTS</h1>
       <div id="outer" >
-        {renderMobileOrBrowser()}
+        <div id="projects" >
+          {renderProjects()}
+        </div>
       </div>
       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
         <img src={github} alt="link to github" />

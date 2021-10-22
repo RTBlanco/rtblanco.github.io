@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Maintenance />
+      {/* remove Maintence banner once its ready for full deployment */}
       <Title />
       <About />
       <Resume />
