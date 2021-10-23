@@ -3,7 +3,6 @@ import Project from './Project';
 import github from '../../images/github.png';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
-import SwipeableViews from 'react-swipeable-views';
 
 
 
