@@ -21,7 +21,7 @@
   color: white;
   border: none;
   height: 25px;
-  padding: 5px;
+  padding: 10px;
 }
 
 #contact-form button {
@@ -72,9 +72,13 @@ textarea {
   #contact-form input {
     margin-bottom: 1px;
     font-size: 2vh;
+    border: 1px solid black;
+    border-radius: 0;
   }
   #contact-form textarea {
     font-size: 2vh;
+    border: 1px solid black;
+    border-radius: 0;
   }
 
   #contact-form button {
