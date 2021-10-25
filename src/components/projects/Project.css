@@ -81,14 +81,5 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .project {
-    height: 300px;
-    width: 280px;
-  }
-
-  .outerproject {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /* change the size of the card here or in ./projects.css */
 }
