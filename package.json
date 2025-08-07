@@ -1,5 +1,5 @@
 {
-  "homepage": "https://rtblanco.github.io/rtblanco-website/",
+  "homepage": "https://rtblanco.github.io",
   "name": "rtblanco-website",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +12,7 @@
     "react-dom": "^18.3.1",
     "react-responsive": "^9.0.2",
     "react-responsive-carousel": "^3.2.23",
-    "react-scripts": "^0.0.0",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
