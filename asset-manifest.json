@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/rtblanco-website/static/css/main.bc508fc4.css",
-    "main.js": "/rtblanco-website/static/js/main.6a9eb5c7.js",
-    "static/media/node.png": "/rtblanco-website/static/media/node.ae9589a989fc017200d2.png",
-    "static/media/photo_of_me.jpg": "/rtblanco-website/static/media/photo_of_me.834b65c4baefe94947ef.jpg",
-    "static/media/python_logo.png": "/rtblanco-website/static/media/python_logo.d8b377f05522bf35de36.png",
-    "static/media/resume.png": "/rtblanco-website/static/media/resume.ca87eb36702c87ebfb93.png",
-    "static/media/Resume.pdf": "/rtblanco-website/static/media/Resume.5d8b1cf4b18a41e3d168.pdf",
-    "static/media/flask.png": "/rtblanco-website/static/media/flask.a513ea1d978a3bef2c16.png",
-    "static/media/ruby.png": "/rtblanco-website/static/media/ruby.70e6574496d4c8716fa1.png",
-    "static/media/sass.png": "/rtblanco-website/static/media/sass.58e61bc991e55a95072b.png",
-    "static/media/css.png": "/rtblanco-website/static/media/css.74ff0b5fd86f9eadddd3.png",
-    "static/media/html.png": "/rtblanco-website/static/media/html.f3aa7827cd5160f3fc1c.png",
-    "static/media/javascript.png": "/rtblanco-website/static/media/javascript.76536eb2b86398277df3.png",
-    "static/media/react.png": "/rtblanco-website/static/media/react.20adfb35ae6a6e5817bf.png",
-    "static/media/redux.png": "/rtblanco-website/static/media/redux.1edba70acbe0a2484e24.png",
-    "static/media/rails.png": "/rtblanco-website/static/media/rails.c87f032e560c7a8da82c.png",
-    "static/media/express.png": "/rtblanco-website/static/media/express.39a0f4c3d981885c64f8.png",
-    "static/media/sql.png": "/rtblanco-website/static/media/sql.ce93e6470262c8f6c25b.png",
-    "index.html": "/rtblanco-website/index.html",
-    "main.bc508fc4.css.map": "/rtblanco-website/static/css/main.bc508fc4.css.map",
-    "main.6a9eb5c7.js.map": "/rtblanco-website/static/js/main.6a9eb5c7.js.map"
+    "main.css": "/static/css/main.bc508fc4.css",
+    "main.js": "/static/js/main.e9ba63ac.js",
+    "static/media/node.png": "/static/media/node.ae9589a989fc017200d2.png",
+    "static/media/photo_of_me.jpg": "/static/media/photo_of_me.834b65c4baefe94947ef.jpg",
+    "static/media/python_logo.png": "/static/media/python_logo.d8b377f05522bf35de36.png",
+    "static/media/resume.png": "/static/media/resume.ca87eb36702c87ebfb93.png",
+    "static/media/Resume.pdf": "/static/media/Resume.5d8b1cf4b18a41e3d168.pdf",
+    "static/media/flask.png": "/static/media/flask.a513ea1d978a3bef2c16.png",
+    "static/media/ruby.png": "/static/media/ruby.70e6574496d4c8716fa1.png",
+    "static/media/sass.png": "/static/media/sass.58e61bc991e55a95072b.png",
+    "static/media/css.png": "/static/media/css.74ff0b5fd86f9eadddd3.png",
+    "static/media/html.png": "/static/media/html.f3aa7827cd5160f3fc1c.png",
+    "static/media/javascript.png": "/static/media/javascript.76536eb2b86398277df3.png",
+    "static/media/react.png": "/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/redux.png": "/static/media/redux.1edba70acbe0a2484e24.png",
+    "static/media/rails.png": "/static/media/rails.c87f032e560c7a8da82c.png",
+    "static/media/express.png": "/static/media/express.39a0f4c3d981885c64f8.png",
+    "static/media/sql.png": "/static/media/sql.ce93e6470262c8f6c25b.png",
+    "index.html": "/index.html",
+    "main.bc508fc4.css.map": "/static/css/main.bc508fc4.css.map",
+    "main.e9ba63ac.js.map": "/static/js/main.e9ba63ac.js.map"
   },
   "entrypoints": [
     "static/css/main.bc508fc4.css",
-    "static/js/main.6a9eb5c7.js"
+    "static/js/main.e9ba63ac.js"
   ]
 }
