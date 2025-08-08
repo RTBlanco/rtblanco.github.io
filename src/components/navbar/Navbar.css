@@ -1,0 +1,21 @@
+.navbar{
+  /* border: solid, red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+
+.section-select {
+  /* height: 100%; */
+  justify-content: space-evenly;
+  width: 30%;
+  /* border: solid, red; */
+  display: flex;
+  /* justify-content: center; */
+  align-self: center;
+}
+
+.section-select, a {
+  color: white;
+  text-decoration: none;
+}

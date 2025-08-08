@@ -4,9 +4,9 @@ const Navbar = () => {
 
 
   return (
-    <div className="Navbar">
+    <div className="navbar">
       <h1>Ronny</h1>
-      <div> 
+      <div className='section-select'> 
         <a href="">About Me</a>
         <a href="">Projects</a>
         <a href="">Resume</a>
