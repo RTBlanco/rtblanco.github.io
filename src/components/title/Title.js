@@ -1,5 +1,6 @@
 import './Title.css';
 import image from '../../images/photo_of_me.jpg';
+import resume from './Resume.pdf'
 
 const Title = () => {
 
@@ -18,8 +19,8 @@ const Title = () => {
           </h1>
           <p>Software Engineer</p>
           <div className="buttons">
-            <button>Download Resume</button>
-            <a href="">Learn More</a>
+            <a href={resume} id="resume-download" target="_blank" rel="noreferrer" download>Download Resume</a>
+            <a href="#about">Learn More</a>
           </div>
         </div>
         <div className="picture">

@@ -39,7 +39,7 @@ const Projects = () => {
         </div>
       </div>
       <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
-        <img src={github} alt="link to github" />
+        {/* <img src={github} alt="link to github" /> */}
       </a>
     </div>
   )
