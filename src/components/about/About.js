@@ -2,8 +2,8 @@ import './About.css'
 import image from '../../images/photo_of_me.jpg';
 import twiiterWhite from '../../images/links/logo-black.png';
 import twiiterBlack from '../../images/links/logo-white.png';
-import linkIdWhite from '../../images/links/InBug-White.png';
-import linkIdBlack from '../../images/links/InBug-Black.png';
+import linkedInWhite from '../../images/links/InBug-White.png';
+import linkedInBlack from '../../images/links/InBug-Black.png';
 import githubBlack from '../../images/links/github-mark.png';
 import githubWhite from '../../images/links/github-mark-white.png'
 
@@ -26,8 +26,8 @@ const About = () => {
           <img src={githubWhite} alt="link to github" />
         </a>
         <a href="">Email</a>
-        <a href="">
-          <img src={linkIdWhite} alt="link to linkedIn" />
+        <a href="https://www.linkedin.com/in/ronnytoribio/" target='_blank'>
+          <img src={linkedInWhite} alt="link to linkedIn"/>
         </a>
       </div>
     </div>
