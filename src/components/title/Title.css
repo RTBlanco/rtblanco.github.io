@@ -1,38 +1,69 @@
 
 
-:root {
+/* :root {
   --title-background-color: rgb(37, 37, 37);
-}
+} */
 
 #title {
   height: 100vh;
-  /* background-color: var(--title-background-color); */
+  /* background-color: var(--title-background-color);
   /* background-image: url("https://media.giphy.com/media/L3Vca26EaTIEU/giphy.gif"); */
   /* background-image: url("https://media.giphy.com/media/WaWl4kAKplVks/giphy.gif"); */
   /* background-image: url("https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"); */
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
+  /* background-position: center;  */
+  /* background-repeat: no-repeat;  */
+  /* background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#title button {
+.title-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.name { 
+  align-content: center;
+}
+
+.name p {
+  color: #888888;
+}
+
+.picture {
+  width: 450px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+#photo-me {
+  height: 625px;
+}
+
+.buttons {
+  
+}
+
+/* #title button {
   border: 2px white solid;
   color: white;
-  /* background-color: var(--title-background-color); */
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--title-background-color); */
+  /* background-color: rgba(0, 0, 0, 0);
   padding-left: 20px;
   padding-right: 20px;
   font-weight: bold;
   font-size: 2em;
   cursor: pointer;
-}
+} */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   #title button {
     width: 66%;
     font-size: 1.5rem;
   }
-}
+} */

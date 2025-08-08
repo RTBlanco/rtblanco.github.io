@@ -21,14 +21,14 @@
 }
 
 
-#photo-me {
+/* #photo-me {
   height: 650px;
   box-shadow: 10px 10px 8px #888888;
-}
+} */
 
-#about-content, #photo-me {
+/* #about-content, #photo-me {
   margin-top: 150px;
-}
+} */
 
 @media only screen and (max-width: 600px) {
   #about {
@@ -41,13 +41,13 @@
     margin-bottom: 0;
   }
 
-  #photo-me {
+  /* #photo-me {
     height: 51%;
-  }
+  } */
 
-  #about-content, #photo-me {
+  /* #about-content, #photo-me {
     margin: 0;
-  }
+  } */
 
   #about-content {
     width: 100%;

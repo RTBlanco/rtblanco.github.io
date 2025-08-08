@@ -1,4 +1,5 @@
 import './Title.css';
+import image from '../../images/photo_of_me.jpg';
 
 const Title = () => {
 
@@ -9,6 +10,22 @@ const Title = () => {
   return (
     <div id='title'>
       {/* <button onClick={handleClick}>RONNY TORIBIO BLANCO</button> */}
+      <div className="title-area">
+        <div className="name">
+          <h1>
+            Hi, I am<br />
+            Ronny Toribio Blanco
+          </h1>
+          <p>Software Engineer</p>
+          <div className="buttons">
+            <button>Download Resume</button>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div className="picture">
+          <img id="photo-me" src={image} alt="ronny" />
+        </div>
+      </div>
     </div>
   )
 }

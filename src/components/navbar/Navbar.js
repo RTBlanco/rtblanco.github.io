@@ -2,7 +2,6 @@ import './Navbar.css'
 
 const Navbar = () => {
 
-
   return (
     <div className="navbar">
       <h1>Ronny</h1>
@@ -16,4 +15,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
