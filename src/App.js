@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './components/navbar/Navbar';
 import Title from './components/title/Title';
 import About from './components/about/About';
 import Resume from './components/resume/Resume';
@@ -10,8 +11,9 @@ import Maintenance from './Maintenance';
 function App() {
   return (
     <>
-      <Maintenance />
+      {/* <Maintenance /> */}
       {/* remove Maintence banner once its ready for full deployment */}
+      <Navbar />
       <Title />
       <About />
       <Resume />
