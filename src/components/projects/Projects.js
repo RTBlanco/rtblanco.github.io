@@ -1,6 +1,6 @@
 import './Projects.css';
 import Project from './Project';
-import github from '../../images/github.png';
+// import github from '../../images/github.png';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
 
