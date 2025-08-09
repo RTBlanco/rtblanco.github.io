@@ -1,38 +1,94 @@
 
 
-:root {
+/* :root {
   --title-background-color: rgb(37, 37, 37);
-}
+} */
 
 #title {
   height: 100vh;
-  /* background-color: var(--title-background-color); */
-  background-image: url("https://media.giphy.com/media/L3Vca26EaTIEU/giphy.gif");
+  /* background-color: var(--title-background-color);
+  /* background-image: url("https://media.giphy.com/media/L3Vca26EaTIEU/giphy.gif"); */
   /* background-image: url("https://media.giphy.com/media/WaWl4kAKplVks/giphy.gif"); */
   /* background-image: url("https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"); */
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
+  /* background-position: center;  */
+  /* background-repeat: no-repeat;  */
+  /* background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#title button {
-  border: 2px white solid;
-  color: white;
-  /* background-color: var(--title-background-color); */
-  background-color: rgba(0, 0, 0, 0);
-  padding-left: 20px;
-  padding-right: 20px;
-  font-weight: bold;
-  font-size: 2em;
+.title-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.name { 
+  align-content: center;
+}
+
+.name p {
+  color: #888888;
+}
+
+.picture {
+  width: 450px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+#photo-me {
+  height: 625px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#resume-download{
   cursor: pointer;
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttons a {
+  border: white solid 2px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 600px) {
-  #title button {
-    width: 66%;
-    font-size: 1.5rem;
+  .title-area {
+    /* height: 100%; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
+
+  .picture {
+    margin-top: 100px;
+    width: 350px;
+    height: 350px;
+  }
+
+  #photo-me {
+    height: 525px;
+  }
+
 }

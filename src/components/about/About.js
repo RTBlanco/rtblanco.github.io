@@ -1,16 +1,48 @@
 import './About.css'
 import image from '../../images/photo_of_me.jpg';
+import twiiterBlack from '../../images/links/logo-black.png';
+import twiiterWhite from '../../images/links/logo-white.png';
+import linkedInWhite from '../../images/links/InBug-White.png';
+import linkedInBlack from '../../images/links/InBug-Black.png';
+import githubBlack from '../../images/links/github-mark.png';
+import githubWhite from '../../images/links/github-mark-white.png'
+import emailBlack from '../../images/links/email-black.png';
+import emailWhite from '../../images/links/email-white.png';
+
 
 const About = () => {
+
+  const images = {
+    "linkedIn" : linkedInWhite,
+    "twitter" : twiiterWhite,
+    "github" : githubWhite,
+    "email" : emailWhite
+  }
+
   return (
     <div id="about">
       <div id="about-content">
         <h1>ABOUT ME</h1>
-        <p>I am a Full Stack Web Developer, with a passion for learning new and exciting programs and be able to utilize them in my day-to-day coding.
-I have experience building applications with Ruby on Rails, Python Flask, and JavaScript Express, as well as React and Redux. I am comfortable working in a Full Stack environment and can easily transition from coding in the back end to the front end with ease. Unlike the traditional route, that most Software Engineers undergo I first taught myself to program in python and later decided to join a Bootcamp to learn things that I might've missed when teaching myself to code. When not trying to create the next best thing, I’m usually working on cars, playing basketball, or improving on my photography!</p>
+        <p>
+          I’m a full-stack software engineer who’s been building cool, scalable web apps for over 3 years with Ruby on Rails, React.js, and Python. I’m all about clean code, smooth user experiences, and turning ideas into real, working things people actually enjoy using.
+          When I’m not deep in code, I’m probably in CAD designing custom car mods, posting random 3D creations online for anyone to download, or messing with whatever side project I’m into that week.
+          Away from the screen? You’ll catch me on the basketball court, out fishing, riding my bike, or just hanging out with friends and family. Basically, if it’s hands on, creative, or just plain fun, I’m in. 
+        </p>
       </div>
-      {/* This is the reall photo that is going to be used */}
-      <img id="photo-me" src={image} alt="ronny" />
+      <div className="links">
+        <a href="https://x.com/R_T_Blanco" target='_bank'>
+          <img src={images["twitter"]} alt="Link to twitter" />
+        </a>
+        <a href="http://github.com/RTBlanco" target="_blank">
+          <img src={images["github"]} alt="link to github" />
+        </a>
+        <a href="mailto:ronnytoribio1@hotmail.com">
+          <img src={images["email"]} alt="Email ya boy!" />
+        </a>
+        <a href="https://www.linkedin.com/in/ronnytoribio/" target='_blank'>
+          <img src={images["linkedIn"]} alt="link to linkedIn"/>
+        </a>
+      </div>
     </div>
   )
 }; 

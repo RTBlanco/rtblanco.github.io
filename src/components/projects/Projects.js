@@ -1,8 +1,9 @@
 import './Projects.css';
 import Project from './Project';
-import github from '../../images/github.png';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 
 
@@ -17,30 +18,45 @@ const Projects = () => {
   }, []);
 
 
-  const fetchProjects = () => {
-    // convert to async await in the future 
-    return fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=rtblanco')
-      .then(resp => resp.json())
-      .then(data => setRepos(data))
-      .catch(error => console.log(error))
+  const fetchProjects = async () => {
+    try {
+      const resp = await fetch('https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=RTBlanco');
+      const data = await resp.json();
+      setRepos(data);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   
   const renderProjects = () => {
-    return repos.map((project, index) => <Project key={index} project={project} isMobile={isMobile}/> )
+    return repos.map((project, index) => {
+      if (isMobile) {
+        return (
+          <SwiperSlide key={index}>
+            <Project project={project} isMobile={isMobile}/>
+          </SwiperSlide>
+        );
+      } else {
+        return (
+          <Project key={index} project={project} isMobile={isMobile}/>
+        );
+      }
+    });
   }
 
   return (
     <div id="projects-container">
       <h1>PROJECTS</h1>
-      <div id="outer" >
-        <div id="projects" >
-          {renderProjects()}
-        </div>
+      <div id="projects">
+        {isMobile ? (
+          <Swiper>
+            {renderProjects()}
+          </Swiper>
+        ) : (
+          renderProjects()
+        )}
       </div>
-      <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
-        <img src={github} alt="link to github" />
-      </a>
     </div>
   )
 };

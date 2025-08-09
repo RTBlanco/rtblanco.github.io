@@ -1,0 +1,43 @@
+.navbar{
+  /* border: solid, red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+
+.section-select {
+  /* height: 100%; */
+  justify-content: space-evenly;
+  width: 30%;
+  /* border: solid, red; */
+  display: flex;
+  /* justify-content: center; */
+  align-self: center;
+}
+
+.section-select, a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: none;
+    margin-top: 10px;
+  }
+
+  .section-select {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .navbar h1 {
+    display: none;
+  }
+
+  .navbar a {
+    font-size: large;
+  }
+
+}

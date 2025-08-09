@@ -1,5 +1,13 @@
+:root {
+  --title-background-color:#1e1d1d;
+}
+
 * {
  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +17,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--title-background-color);
+  color: white;
 }
 
 code {
