@@ -73,9 +73,22 @@
   font-size: 16px;
 }
 
-/* @media only screen and (max-width: 600px) {
-  #title button {
-    width: 66%;
-    font-size: 1.5rem;
+@media only screen and (max-width: 600px) {
+  .title-area {
+    /* height: 100%; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
-} */
+
+  .picture {
+    margin-top: 100px;
+    width: 350px;
+    height: 350px;
+  }
+
+  #photo-me {
+    height: 525px;
+  }
+
+}

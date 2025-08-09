@@ -13,8 +13,6 @@ const Navbar = () => {
         <a href="#contact">Contact me</a>
       </div>
     </div>
-
-    
   )
 }
 
