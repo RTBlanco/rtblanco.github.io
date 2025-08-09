@@ -1,11 +1,13 @@
 import './About.css'
 import image from '../../images/photo_of_me.jpg';
-import twiiterWhite from '../../images/links/logo-black.png';
-import twiiterBlack from '../../images/links/logo-white.png';
+import twiiterBlack from '../../images/links/logo-black.png';
+import twiiterWhite from '../../images/links/logo-white.png';
 import linkedInWhite from '../../images/links/InBug-White.png';
 import linkedInBlack from '../../images/links/InBug-Black.png';
 import githubBlack from '../../images/links/github-mark.png';
 import githubWhite from '../../images/links/github-mark-white.png'
+import emailBlack from '../../images/links/email-black.png';
+import emailWhite from '../../images/links/email-white.png';
 
 const About = () => {
   return (
@@ -19,13 +21,15 @@ const About = () => {
         </p>
       </div>
       <div className="links">
-        <a href="" target='_bank'>
+        <a href="https://x.com/R_T_Blanco" target='_bank'>
           <img src={twiiterWhite} alt="Link to twitter" />
         </a>
         <a href="http://github.com/RTBlanco" target="_blank">
           <img src={githubWhite} alt="link to github" />
         </a>
-        <a href="">Email</a>
+        <a href="mailto:ronnytoribio1@hotmail.com">
+          <img src={emailWhite} alt="Email ya boy!" />
+        </a>
         <a href="https://www.linkedin.com/in/ronnytoribio/" target='_blank'>
           <img src={linkedInWhite} alt="link to linkedIn"/>
         </a>
