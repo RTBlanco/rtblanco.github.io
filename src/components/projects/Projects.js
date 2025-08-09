@@ -26,10 +26,11 @@ const Projects = () => {
   }
 
   
-  // const renderProjects = () => {
-  //   return repos.map((project, index) => <Project key={index} project={project} isMobile={isMobile}/> )
-  // }
+  const renderProjects = () => {
+    return repos.map((project, index) => <Project key={index} project={project} isMobile={isMobile}/> )
+  }
 
+  console.log("repos->",repos)
   return (
     <div id="projects-container">
       <h1>PROJECTS</h1>
@@ -38,6 +39,10 @@ const Projects = () => {
           {renderProjects()}
         </div>
       </div> */}
+      <div id="projects">
+        {renderProjects()}
+      </div>
+      
     </div>
   )
 };
