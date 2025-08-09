@@ -47,6 +47,17 @@
 } */
 
 @media only screen and (max-width: 600px) {
+  #projects {
+    /* display: flex; */
+    /* overflow: hidden; */
+    grid-gap: 0px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
   /* #outer  {
     height: 60%;
     display: flex;

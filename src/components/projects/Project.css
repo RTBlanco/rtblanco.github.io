@@ -118,4 +118,15 @@
 
 @media only screen and (max-width: 600px) {
   /* change the size of the card here or in ./projects.css */
+  .project {
+    height: 500px;
+  }
+
+  .description {
+    margin: 120px 0 25px;
+  }
+
+  .icons {
+    height: 15%;
+  }
 }
