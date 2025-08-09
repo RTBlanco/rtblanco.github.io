@@ -10,7 +10,7 @@ const Navbar = () => {
         <a href="#about">About Me</a>
         <a href="#projects-container">Projects</a>
         <a href={resume} target="_blank" rel="noreferrer" download>Resume</a>
-        <a href="">Contact me</a>
+        <a href="#contact">Contact me</a>
       </div>
     </div>
   )

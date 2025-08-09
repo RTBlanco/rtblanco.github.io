@@ -16,7 +16,7 @@ function App() {
       <Title />
       <About />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 };
