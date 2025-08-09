@@ -5,7 +5,6 @@ import About from './components/about/About';
 import Resume from './components/resume/Resume';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
-import Skills from './components/skills/Skills';
 import Maintenance from './Maintenance';
 
 function App() {
@@ -16,8 +15,7 @@ function App() {
       <Navbar />
       <Title />
       <About />
-      {/* <Projects /> */}
-      {/* <Skills /> */}
+      <Projects />
       {/* <Contact /> */}
     </>
   );

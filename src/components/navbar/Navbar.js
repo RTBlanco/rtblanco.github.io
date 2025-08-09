@@ -7,7 +7,7 @@ const Navbar = () => {
       <h1>Ronny</h1>
       <div className='section-select'> 
         <a href="#about">About Me</a>
-        <a href="">Projects</a>
+        <a href="#projects-container">Projects</a>
         <a href="">Resume</a>
         <a href="">Contact me</a>
       </div>

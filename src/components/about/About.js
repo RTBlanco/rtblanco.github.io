@@ -9,7 +9,16 @@ import githubWhite from '../../images/links/github-mark-white.png'
 import emailBlack from '../../images/links/email-black.png';
 import emailWhite from '../../images/links/email-white.png';
 
+
 const About = () => {
+
+  const images = {
+    "linkedIn" : linkedInWhite,
+    "twitter" : twiiterWhite,
+    "github" : githubWhite,
+    "email" : emailWhite
+  }
+
   return (
     <div id="about">
       <div id="about-content">
@@ -22,16 +31,16 @@ const About = () => {
       </div>
       <div className="links">
         <a href="https://x.com/R_T_Blanco" target='_bank'>
-          <img src={twiiterWhite} alt="Link to twitter" />
+          <img src={images["twitter"]} alt="Link to twitter" />
         </a>
         <a href="http://github.com/RTBlanco" target="_blank">
-          <img src={githubWhite} alt="link to github" />
+          <img src={images["github"]} alt="link to github" />
         </a>
         <a href="mailto:ronnytoribio1@hotmail.com">
-          <img src={emailWhite} alt="Email ya boy!" />
+          <img src={images["email"]} alt="Email ya boy!" />
         </a>
         <a href="https://www.linkedin.com/in/ronnytoribio/" target='_blank'>
-          <img src={linkedInWhite} alt="link to linkedIn"/>
+          <img src={images["linkedIn"]} alt="link to linkedIn"/>
         </a>
       </div>
     </div>
