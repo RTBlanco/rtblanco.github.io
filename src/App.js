@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Title from './components/title/Title';
 import About from './components/about/About';
-import Resume from './components/resume/Resume';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Maintenance from './Maintenance';
