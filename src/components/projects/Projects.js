@@ -19,28 +19,25 @@ const Projects = () => {
 
   const fetchProjects = () => {
     // convert to async await in the future 
-    return fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=rtblanco')
+    return fetch('https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=RTBlanco')
       .then(resp => resp.json())
       .then(data => setRepos(data))
       .catch(error => console.log(error))
   }
 
   
-  const renderProjects = () => {
-    return repos.map((project, index) => <Project key={index} project={project} isMobile={isMobile}/> )
-  }
+  // const renderProjects = () => {
+  //   return repos.map((project, index) => <Project key={index} project={project} isMobile={isMobile}/> )
+  // }
 
   return (
     <div id="projects-container">
       <h1>PROJECTS</h1>
-      <div id="outer" >
+      {/* <div id="outer" >
         <div id="projects" >
           {renderProjects()}
         </div>
-      </div>
-      <a id="github-link" href="http://github.com/RTBlanco" target="_blank" rel="noopener noreferrer">
-        {/* <img src={github} alt="link to github" /> */}
-      </a>
+      </div> */}
     </div>
   )
 };

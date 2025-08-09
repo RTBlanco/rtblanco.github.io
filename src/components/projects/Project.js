@@ -1,5 +1,6 @@
 import './Project.css';
-// import github from '../../images/github.png';
+import githubWhite from '../../images/links/github-mark-white.png';
+import githubBlack from '../../images/links/github-mark.png'
 
 const Project = ({project, isMobile}) => {
 
@@ -14,7 +15,7 @@ const Project = ({project, isMobile}) => {
         <div className="back">
           <div className="project-desc">
             <p>{project.description}</p>
-            {/* <a href={project.link} target="_blank" rel="noreferrer"><img src={github} alt="link to repo" /></a> */}
+            <a href={project.link} target="_blank" rel="noreferrer"><img src={githubBlack} alt="link to repo" /></a>
           </div>
         </div>
         

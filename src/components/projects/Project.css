@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   perspective: 1000px;
+  border-radius: 20px;
 }
 
 .project-inner {
@@ -12,6 +13,8 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  color: black;
+  border-radius: 20px;
 }
 
 .project:focus {
@@ -34,6 +37,8 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 20px;
+
 }
 
 .back {
@@ -52,7 +57,7 @@
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .front h1 {
@@ -73,6 +78,10 @@
 .back {
   background-color: white;
   transform: rotateY(180deg);
+}
+
+.back p {
+  margin-bottom: 20px;
 }
 
 

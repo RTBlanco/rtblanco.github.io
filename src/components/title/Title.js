@@ -1,6 +1,6 @@
 import './Title.css';
 import image from '../../images/photo_of_me.jpg';
-import resume from './Resume.pdf'
+import resume from '../../Resume.pdf'
 
 const Title = () => {
 
