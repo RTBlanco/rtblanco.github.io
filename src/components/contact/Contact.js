@@ -3,9 +3,6 @@ import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 
 const Contact = () => {
-
-  console.log(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMP_ID,process.env.REACT_APP_USER_ID)
-
   const form = useRef(null)
 
   const handelSubmit = (e) => {
